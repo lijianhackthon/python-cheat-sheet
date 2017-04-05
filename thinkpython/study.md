@@ -26,4 +26,15 @@
 - Variables names are case sensitive
 
 ## ch3 Functions
--
+- The expression in parentheses is called the argument of the function
+- A module is a file that contains a collection of related variables and functions
+- Composition: one of the most useful features of Programming languages is their ability to take small building blocks and compose them. Almost anywhere you can put a value, you can put an arbitrary expression, with one exception: the left side of an assignment statement has to be a variable name.
+- Inside the function, the arguments are assigned to variables called parameters, eg. def print_twice(bruce): print bruce    # bruce is a paramenter
+- Variables and paramenters of functions are local
+- To keep track of which variables can be used where, it is sometimes useful to draw a stack diagram. Like state diagrams, stack diagram show the value of each variable, but they also show the function each variable belongs to. Each function is represented by a **frame**. A frame is a box with the name of a function beside it and the parameters and variables of the function inside it.
+- The frames are arranged in a stack that indicates which function called which. **__main__** is a special name for the topmost frame. When you create a variable outside of any function, it belongs to **__main__**
+- traceback: A list of the functions that are executing, printed when an exception occurs.
+- The order of the functions in the traceback is the same as the order of the frames in the stack diagram.
+- Two ways to import:
+  - import module_name
+  - from module_name import *   # The disadvantage is that there might be conflicts between names defined in different modules, or between a name from a module and one of your variables.
